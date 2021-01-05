@@ -1,0 +1,15 @@
+.navbar {
+    /*opacity: 0.8;*/
+    border-bottom: 1px solid #fff ;
+}
+.jumbotron {
+    padding-top: 100px;
+    /*opacity: 0.8;*/
+    padding-bottom:60px;
+}
+.row{
+    width: 80%;
+}
+.card{
+    margin-left: 250px;
+}

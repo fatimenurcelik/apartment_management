@@ -1,0 +1,24 @@
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+
+.bg-dark-blue {
+    background: chocolate;
+}
+
+.bg-light-blue {
+    background: rgb(210, 30, 114);
+}
