@@ -18,9 +18,9 @@ if (isset($_POST['giris-formu'])) {
     $query =mysqli_query($conn, "SELECT * FROM users WHERE username='$ad' AND password='$password'");
 
     $sıra = mysqli_num_rows($query);
-    if($sıra == 1) {
+    if($sıra ->num_rows>0) {
 		$_SESSION["isAdmin"] = $row["isAdmin"];
-
+		
 		if ($row["isAdmin"] == 1) 
 			header('location: afteradmin.php');
 
