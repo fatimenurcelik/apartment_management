@@ -1,5 +1,42 @@
 <?php 
-session_start(); 
+session_start();
+include "config.php" ;
+if (isset($_POST['giris-formu'])) {
+
+    $submit = htmlspecialchars($_POST['giris-formu'], ENT_QUOTES, 'UTF-8');
+
+    if(empty($_POST['ad']) || empty($_POST['password'])) {
+        die("Boş Alan Bırakmayınız.");
+    }else{
+    $ad = $_POST['ad'];
+    $password = $_POST['password'];
+
+   //$password_crypt = md5($password);
+
+
+    $db=mysqli_select_db($conn,"myDB");
+    $query =mysqli_query($conn, "SELECT * FROM users WHERE username='$ad' AND password='$password'");
+
+    $sıra = mysqli_num_rows($query);
+    if($sıra == 1) {
+		$_SESSION["isAdmin"] = $row["isAdmin"];
+
+		if ($row["isAdmin"] == 1) 
+			header('location: afteradmin.php');
+
+		header('location: afterlogin.php');
+	
+		
+    }else {
+        die("kullanıcı adı veya şifre hatalı");
+	}
+	
+	}
+
+}
+?>
+
+/*session_start(); 
 include "config.php";
 
 if (isset($_POST['ad']) && isset($_POST['password'])) {
@@ -33,12 +70,16 @@ if (isset($_POST['ad']) && isset($_POST['password'])) {
                 $_SESSION['userId'] = $row['userId'];
                   
                     header("Location: afterlogin.php");
-                    exit();
-                    if ($_SESSION['userName'] == 0) {
-                        header("Location: afteradmin.php");
+                    //exit();
+                   // if ($_SESSION['userName'] == 0) {
+                        //header("Location: afteradmin.php");
+                      //  exit();
+					//}
+					if ($uname == 0) {
+						header("Location: afteradmin.php");
                         exit();
-                    }
-                
+					}
+					
             }else{
 				header("Location: login.php?error=Incorect User name or password");
 		        exit();
@@ -53,3 +94,4 @@ if (isset($_POST['ad']) && isset($_POST['password'])) {
 	header("Location: login.php");
 	exit();
 }
+?>*/
