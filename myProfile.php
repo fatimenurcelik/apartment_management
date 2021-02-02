@@ -78,7 +78,7 @@
              <div class="col md-flex">
                 <div class="card2">
                     
-                    <img src="images/aidat2.jpg" class="card-img-top img-thumb-nail" alt="">
+                    <img src="images/aidat.jpg" class="card-img-top img-thumb-nail" alt="">
                    
                     
                     <div class="card-body">

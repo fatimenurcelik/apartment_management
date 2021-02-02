@@ -1,3 +1,8 @@
+<?php
+session_start();
+$a = $_SESSION["isAdmin"];
+echo $a;
+?>
 <!DOCTYPE html>
  <html lang="en">
  <head>

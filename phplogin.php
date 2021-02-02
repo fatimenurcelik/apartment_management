@@ -18,13 +18,17 @@ if (isset($_POST['giris-formu'])) {
     $query =mysqli_query($conn, "SELECT * FROM users WHERE username='$ad' AND password='$password'");
 
     $sıra = mysqli_num_rows($query);
-    if($sıra ->num_rows>0) {
+    if($sıra == 1) {
+		$row =mysqli_fetch_assoc($query);
 		$_SESSION["isAdmin"] = $row["isAdmin"];
+		$_SESSION["userId"] = $row["userId"];
 		
-		if ($row["isAdmin"] == 1) 
+		if ($row["isAdmin"] == 1 ) {
 			header('location: afteradmin.php');
-
-		header('location: afterlogin.php');
+			echo "ghvjh";
+		}else{
+			header('location: afterlogin.php');
+		}
 	
 		
     }else {
