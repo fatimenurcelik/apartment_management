@@ -1,8 +1,10 @@
+
 <?php
-session_start();
+/*session_start();
 $a = $_SESSION["isAdmin"];
 echo $a;
-?>
+*/?>
+
 <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -119,7 +121,19 @@ echo $a;
                 </div>
             </div>
             <br>
-         
+            <div class="col md-flex ">
+                <div class="card2">
+                    <a href="üyebilgi.php">
+                    <img src="images/repo.png" class="card-img-top img-thumb-nail " id="photo" alt="">
+                    </a>
+                     <div class="card-body">
+                     <a href="üyebilgi.php" class="card-link ">Raporlar-Düzenlemeler</a>
+                     
+                    </div>
+                </div>
+            </div>
+
+                  
                         
         </div>
     </div>
@@ -150,7 +164,8 @@ echo $a;
                     <div class="card-body">
                         <h4 class="card-title">Temizlik hizmeti</h4>
                          <p>
-                            Zamanınız mı yok? Biz halledelim. 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius 
+                            laborum consectetur commodi tempora quod soluta recusandae dicta nemo unde saepe?
                         </p>
                     </div>
                    </div>

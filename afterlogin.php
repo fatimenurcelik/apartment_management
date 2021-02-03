@@ -107,7 +107,9 @@
                     <div class="card-body">
                         <h4 class="card-title">Temizlik hizmeti</h4>
                          <p>
-                            Zamanınız mı yok? Biz halledelim. 
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam totam 
+                            cumque asperiores odit accusantium atque ratione nam, neque, impedit,
+                            sit consequuntur eum cum incidunt. Quos harum corporis maxime eaque dolores.
                         </p>
                     </div>
                    </div>

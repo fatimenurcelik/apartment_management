@@ -20,6 +20,8 @@
     </head>
 
  <body>
+ 
+ 
      
      <nav class ="navbar bg-dark navbar-expand-sm navbar-dark fixed top">
          <div class="container">
@@ -102,11 +104,15 @@
             <br>
             <div class="col md-flex">
                 <div class="card2">
-                    <img src="images/temizlik.png" class="card-img-top img-thumb-nail" alt="">
+                <i class="fas fa-bullhorn"></i>
+
+                  <img src="images/announcement.jpg" class="card-img-top img-thumb-nail" alt="">
                      <div class="card-body">
-                        <h4 class="card-title">Temizlik randevu al</h4>
+                        <h4 class="card-title">Duyurular</h4>
                       
-                    </div>
+                    </div> 
+
+
                 </div>
            </div> 
                         
@@ -139,7 +145,8 @@
                     <div class="card-body">
                         <h4 class="card-title">Temizlik hizmeti</h4>
                          <p>
-                            Zamanınız mı yok? Biz halledelim. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Id unde 
+                            ducimus alias corporis quisquam minima vero nam magni, deserunt tempore!
                         </p>
                     </div>
                    </div>

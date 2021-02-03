@@ -46,7 +46,6 @@
          }
     </style>
   </head>
-
   <body>
      <section class="Form my-4 mx-5">
      <div class="container">
@@ -54,21 +53,99 @@
              <div class="col-lg-5">
                  <img src="images/home.jpg" class= "img-fluid" alt="">
              </div>
-             <div class="col-lg-7 mt-5">
+             <div class="col-lg-7 mt-4">
                  <h1 class="font-weight-bold py-3 ml-4">Çınar Apartmanı</h1>
-                 <form action ="phpmember.php" method="post">
-                      <table id="table">
-            <tr><td>Kullanıcı adı: </td><td><input type="text" name="username" required/></td></tr>
-            <tr><td>Parola: </td><td><input type="text" name="password" required/></td></tr>
-            <tr><td>Eve giriş tarihi: </td><td><input type="text" name="giristar" placeholder ="gün-ay-yıl ör:27.11.2020" required/></td></tr>
-            <tr><td>Evde yasayan birinci kişi ismi : </td><td><input type="text" name="birisim" required/></td></tr>
-            <tr><td>Evde yasayan birinci kişi soyismi : </td><td><input type="text" name="birsoyisim" required/></td></tr>
-            <tr><td>Evde yasayan birinci kişi telefon no: </td><td><input type="text" name="birtel" required/></td></tr>
-            <tr><td>Evde yasayan ikinci kişi varsa ismi : </td><td><input type="text" name="ikiisim" required/></td></tr>
-            <tr><td>Evde yasayan ikinci kişi varsa soyismi : </td><td><input type="text" name="ikisoyisim" required/></td></tr>
-            <tr><td>Evde yasayan ikinci kişi varsa telefon no: </td><td><input type="text" name="ikitel" required/></td></tr>
-            <tr><td><input type="submit" value="KAYDET" name="gönder"></td></tr>
-                        </table>
+                 <h4 class="ml-5 mt-2">Yeni üye ekle</h4>
+                 <form action ="phpmember.php" method="post" class="ml-4">
+                 <table border="0">
+                 <tr>
+                 <td>Kullanıcı adı: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                         <input type="text" name ="ad" required="" class="form-control ">
+                    </div>
+                </div>
+                 </td></tr>
+                 <tr>
+                 <td> Parola: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                        <input type="text" name="password" required="" class="form-control " />
+                    </div>
+                 </div>
+                 </td></tr>
+                 <tr> <td> İsim: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="text" name="name" required="" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>
+                 <tr> <td> Soyisim: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="text" name="surname" required="" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>
+                 <tr> <td> E-mail: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="text" name="email" required="" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>
+                 <tr> <td> Telefon No: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="text" name="phone" required="" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>
+                 <tr> <td> Kapı No: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="text"  name="doorNo"  required="" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>  
+                 <tr> <td> Giriş tarihi: </td>
+                 <td colspan="2">
+                 <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="text" name="start" required="" placeholder="yıl-ay-gün" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>   
+                <tr>
+                <td> Admin mi </td>
+                <td>
+                <div class="form-row ml-4 mt-3">
+                    <div class="col-lg-12">
+                    <input type="radio" id="admin" name="admin" value="1">
+                    <label for="male"> Evet </label>
+                    <input type="radio" id="admin" name="admin" value="0">
+                    <label for="female">Hayır</label>
+                    </div>
+                 </div>
+                 </td>
+                </tr>
+                 <tr> <td colspan="3">
+                 <div class="form-row mt-3">
+                    <div class="col-lg-12">
+                    <input type="submit" value="KAYDET" name="gönder" class="form-control "/>
+                    </div>
+                 </div>
+                 </td></tr>   
+
+                </table>
                  </form>
              </div>
          </div>

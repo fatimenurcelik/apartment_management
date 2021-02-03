@@ -8,6 +8,8 @@
 
 <body>
     <div style="top: 50%; text-align: center; font-size: 150%;">
+        <br>
+        <br>
         <img src="images/telephone.png" alt="telephone" style="width: 200px; height: 200px;">
         <br>
         <h2 > 05xx xxx xx xx</h2>
