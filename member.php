@@ -63,7 +63,7 @@
                  <td colspan="2">
                  <div class="form-row ml-4 mt-3">
                     <div class="col-lg-12">
-                         <input type="text" name ="ad" required="" class="form-control ">
+                         <input type="text" name ="username" required="" class="form-control ">
                     </div>
                 </div>
                  </td></tr>
@@ -125,7 +125,7 @@
                  </div>
                  </td></tr>   
                 <tr>
-                <td> Admin mi </td>
+                <td> Yönetici mi </td>
                 <td>
                 <div class="form-row ml-4 mt-3">
                     <div class="col-lg-12">
@@ -140,7 +140,7 @@
                  <tr> <td colspan="3">
                  <div class="form-row mt-3">
                     <div class="col-lg-12">
-                    <input type="submit" value="KAYDET" name="gönder" class="form-control "/>
+                    <input type="submit" value="KAYDET" name="üye-gönder" class="form-control "/>
                     </div>
                  </div>
                  </td></tr>   
