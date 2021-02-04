@@ -17,6 +17,25 @@
       <!--<link rel="stylesheet" href="global.css">
       <link rel="stylesheet" href="main.css">-->
 
+      <style>
+          #photo{
+              width: 70%;
+              height: auto;
+          }
+          .card-link{
+              color:white;
+              backgraound:bg-dark;
+              text-decoration: none;
+              font-size:26px;
+              margin-left:40px;
+          }
+          .card-link:hover{
+              color:#b7b7a4;
+              backgraound:bg-dark;
+              text-decoration: none;
+          }
+      </style>
+
     </head>
 
  <body>
@@ -79,40 +98,34 @@
         <div class="row">
              <div class="col md-flex">
                 <div class="card2">
-                    
+                    <a href="payDue.php">
                     <img src="images/aidat.jpg" class="card-img-top img-thumb-nail" alt="">
-                   
-                    
+                    </a>
                     <div class="card-body">
-                        <h4 class="card-title">Aidat öde</h4>
-                       
+                        <a href="payDue.php" class="card-link ">Aidat öde</a>
                     </div>
                 </div>
             </div>
             <br>
             <div class="col md-flex ">
                 <div class="card2">
-                    
+                    <a href="showMemInfo.php">
                     <img src="images/ödeme2.jpg" class="card-img-top img-thumb-nail" alt="">
-                    
+                    </a>
                      <div class="card-body">
-                     <h4 class="card-title">Aidat görüntüle</h4>
-                     
+                     <a href="showMemInfo.php" class="card-link ">Aidat görüntüle</a>
                     </div>
                 </div>
             </div>
             <br>
             <div class="col md-flex">
                 <div class="card2">
-                <i class="fas fa-bullhorn"></i>
-
-                  <img src="images/announcement.jpg" class="card-img-top img-thumb-nail" alt="">
+                    <a href="anno.php">
+                    <img src="images/announcement.jpg" class="card-img-top img-thumb-nail" alt="">
+                    </a>
                      <div class="card-body">
-                        <h4 class="card-title">Duyurular</h4>
-                      
+                        <a href="anno.php" class="card-link ">Duyurular</a>
                     </div> 
-
-
                 </div>
            </div> 
                         
