@@ -72,26 +72,79 @@
      <br>
      <main>
         <div class="ms-5 mb-3">
+
         <?php
         include "config.php";
             if ($conn->connect_error) {
                  die("Connection failed: " . $conn->connect_error);
             }
-         $sql="SELECT * FROM announcements ORDER BY id DESC LIMIT 10";
+         $sql="SELECT * FROM dues WHERE isPaid='0' ORDER BY id DESC LIMIT 10";
          $result=$conn->query($sql);
             if($result->num_rows>0){
                 while($row=$result->fetch_assoc()){
-                    $topic=$row['topic'];
-                    $announcement=$row['announcement'];
+                    $price=$row['price'];
+                    $period=$row['period'];
                     $id=$row['id'];
-                    //echo "<h2>" . $txt1 . "</h2>";
-                    //echo "Study PHP at " . $txt2 . "<br>";
+                    $isPaid=$row['isPaid'];
+                    $paymentDate=$row['paymentDate'];
+                    $userId=$row['userId'];
 
-                    echo "<h5>".$id ." - ".$topic ." - ".$announcement ."</h5>";
-                    //echo $topic. " - ".$announcement ;
+                    //$paymentDate = date('Y.m.d');
+                    echo "<h5>".$id ." - ".$period ." - ".$price ."TL </h5>";
+                   
                 }
             }
         ?>
+       <input method="POST" class="btn btn-primary" type="submit" name ="öde" value="Öde">
+      
+       <?php
+        if (isset($_POST['öde'])) {
+
+            $öde = htmlspecialchars($_POST['öde'], ENT_QUOTES, 'UTF-8');
+
+            $sql = "UPDATE dues SET isPaid='1' AND paymentDate=$paymentDate WHERE userId=$userId ";
+
+if ($conn->query($sql) === TRUE) {
+    echo "<script>alert('jkdacj')</script>";
+ // echo "Record updated successfully";
+} else {
+    echo "<script>alert('jkdacj')</script>". $conn->error;
+  //echo "Error updating record: " . $conn->error;
+}
+
+
+           // $isPaid = '1';
+            //$paymentDate = date('Y.m.d');
+           
+            //$password_crypt = md5($password);
+        
+        
+          /*  $db=mysqli_select_db($conn,"myDB");
+            $query =mysqli_query($conn, "SELECT * FROM users WHERE username='$ad' AND password='$password'");
+        
+            $sıra = mysqli_num_rows($query);
+            if($sıra == 1) {
+                $row =mysqli_fetch_assoc($query);
+                $_SESSION["isAdmin"] = $row["isAdmin"];
+                $_SESSION["userId"] = $row["userId"];
+                
+                if ($row["isAdmin"] == 1 ) {
+                    header('location: afteradmin.php');
+                    echo "ghvjh";
+                }else{
+                    header('location: afterlogin.php');
+                }
+            
+                
+            }else {
+                die("kullanıcı adı veya şifre hatalı");
+            }
+            */
+            }
+        
+        
+       
+       ?>
          </div>
      </main>
     <footer class="py-5 bg-dark text-white text-center">
